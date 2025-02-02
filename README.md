@@ -33,3 +33,33 @@ Explore and implement the following modern cryptographic algorithms:
 ```bash
 git clone https://github.com/Namratha8213/INS-Lab-NMAMIT.git
 cd INS-Lab
+```
+
+### 2. Running the Programs
+You can execute the programs using:
+
+- **Google Colab:** Upload the `.ipynb` files and run the cells.
+- **VS Code:** Open the Python files and run them using:
+  ```bash
+  python program_name.py
+
+## Dependencies
+Ensure you have the required libraries installed:
+
+```bash
+pip install numpy sympy pycryptodome
+```
+## Contributing
+Feel free to contribute by improving existing implementations or adding explanations to the code.
+
+## License
+This project is open-source under the MIT License.
+
+
+
+
+
+
+
+
+
