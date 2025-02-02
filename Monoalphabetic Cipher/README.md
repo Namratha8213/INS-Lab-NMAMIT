@@ -44,6 +44,7 @@ The original text is iswewishstoreplaceletter
 ## Screenshot of implementation and Output
 
 ![Monoalphabetic Cipher](./images/Monoalphabetic_Cipher.png)
+![Monoalphabetic Cipher](../Monoalphabetic%20Cipher/images/Monoalphabetic_Cipher.png)
 
 ## Advantages
 
