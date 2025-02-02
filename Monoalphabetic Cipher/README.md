@@ -43,7 +43,7 @@ The original text is iswewishstoreplaceletter
 
 ## Screenshot of implementation and Output
 
-![Monoalphabetic Cipher](images/Monoalphabetic_Cipher.png)
+![Monoalphabetic Cipher](./images/Monoalphabetic_Cipher.png)
 
 ## Advantages
 
