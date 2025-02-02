@@ -41,6 +41,10 @@ The encrypted text is fbqyjfbeclaymiuwyiiyccya
 The original text is iswewishstoreplaceletter
 ```
 
+## Screenshot of implementation and Output
+
+![Monoalphabetic Cipher](images/Monoalphabetic_Cipher.png)
+
 ## Advantages
 
 - More secure than Caesar Cipher (26! possible combinations)
