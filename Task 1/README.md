@@ -10,9 +10,44 @@ Perform an in-depth analysis of substitution and transposition techniques.
 
 Analyze the computational complexity of implementing the following encryption techniques:
 
-- **Playfair Cipher**
-- **Hill Cipher**
-- **Vigenère Cipher**
+#### **Playfair Cipher**
+
+- **Key Generation:** \( O(1) \) (Creating a 5×5 matrix from a keyword is constant time)
+- **Encryption/Decryption:**
+  - Splitting text into digraphs: \( O(n) \)
+  - Searching for letters in the matrix: \( O(1) \) (constant time lookup in a 5×5 grid)
+  - Applying substitution rules: \( O(n) \)
+  - **Overall Complexity:** \( O(n) \)
+
+#### **Hill Cipher**
+
+- **Key Generation:** \( O(m^2) \) (Creating an \( m \times m \) matrix key)
+- **Encryption:**
+  - Splitting plaintext into blocks of size \( m \): \( O(n) \)
+  - Matrix multiplication: \( O(m^3) \) (Standard matrix multiplication complexity)
+  - **Overall Complexity:** \( O(nm^3) \)
+- **Decryption:**
+  - Computing matrix inverse: \( O(m^3) \) (Using Gaussian elimination)
+  - Matrix multiplication with inverse: \( O(m^3) \)
+  - **Overall Complexity:** \( O(nm^3) \)
+
+#### **Vigenère Cipher**
+
+- **Key Expansion (if needed):** \( O(n) \) (Repeating key to match plaintext length)
+- **Encryption/Decryption:**
+  - Shifting each letter based on the key: \( O(n) \) (Single pass through the text)
+  - **Overall Complexity:** \( O(n) \)
+
+### **Summary of Complexity**
+
+| Cipher   | Key Generation | Encryption Complexity | Decryption Complexity |
+| -------- | -------------- | --------------------- | --------------------- |
+| Playfair | \( O(1) \)     | \( O(n) \)            | \( O(n) \)            |
+| Hill     | \( O(m^2) \)   | \( O(nm^3) \)         | \( O(nm^3) \)         |
+| Vigenère | \( O(n) \)     | \( O(n) \)            | \( O(n) \)            |
+
+- **Playfair and Vigenère** are **efficient** with linear complexity.
+- **Hill Cipher** has a higher complexity due to **matrix operations** but provides stronger security.
 
 ### 2. Cryptanalysis
 
