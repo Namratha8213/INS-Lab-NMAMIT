@@ -1,4 +1,28 @@
-# Classical Ciphers Implementation and Analysis Report
+# Classical Ciphers Implementation and Analysis
+
+This repository contains the implementation and analysis of three classical ciphers: **Playfair Cipher**, **Hill Cipher**, and **Vigenère Cipher**. Additionally, a **Hybrid Cipher** combining the Hill and Vigenère ciphers is implemented to achieve enhanced security.
+
+---
+
+## Table of Contents
+
+1. [Cipher Design Process](#cipher-design-process)
+   - [Playfair Cipher](#playfair-cipher)
+   - [Hill Cipher](#hill-cipher)
+   - [Vigenère Cipher](#vigenère-cipher)
+2. [Encryption and Decryption Examples](#encryption-and-decryption-examples)
+3. [Security Evaluation](#security-evaluation)
+   - [Cryptanalysis Results](#cryptanalysis-results)
+   - [Computational Complexity](#computational-complexity)
+   - [Breaking Classical Ciphers](#breaking-classical-ciphers)
+4. [Hybrid Cipher Implementation](#hybrid-cipher-implementation)
+5. [Source Code Organization](#source-code-organization)
+6. [Running the Examples](#running-the-examples)
+7. [Security Recommendations](#security-recommendations)
+8. [Future Improvements](#future-improvements)
+9. [References](#references)
+
+---
 
 ## 1. Cipher Design Process
 
