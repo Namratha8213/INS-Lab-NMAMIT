@@ -1,73 +1,110 @@
-## Security Analysis and Justification
+# Hybrid Classical Cipher
 
-### Hybrid Cipher Security Features
+## Overview
 
-#### 1. 128-bit Security Implementation
+This implementation combines two classical ciphers - Caesar Cipher and Rail Fence Cipher - to create a hybrid encryption system that provides both substitution and transposition techniques.
 
-- **Key Derivation**: SHA-256 for generating strong cryptographic keys
-- **Block Structure**:
-  - 4x4 Hill matrix (128-bit block size)
-  - 8-column transposition (64-bit permutation layer)
-- **Key Space**: Combined keyspace of 2¹²⁸ × 8! possible combinations
+## Features
 
-#### 2. Cryptographic Components
+- Combines Caesar Cipher (substitution) and Rail Fence (transposition)
+- Preserves case sensitivity
+- Handles special characters and spaces
+- Two-layer encryption/decryption process
+- Configurable shift and rail keys
 
-##### Substitution Layer (Hill Cipher)
+## Implementation Details
 
-```python
-# 4x4 Matrix operations
-matrix = np.array(nums).reshape(4, 4)
-sub_block = np.matmul(matrix, self.hill_key) % 256
+### Encryption Process
+
+1. **Caesar Cipher Layer**
+   - Shifts each letter by a specified amount
+   - Preserves case and special characters
+2. **Rail Fence Layer**
+   - Arranges text in zigzag pattern
+   - Creates transposition based on rail key
+
+### Mathematical Foundation
+
+```
+Caesar Encryption: C = (P + k) mod 26
+Rail Fence Pattern: zigzag of depth n
+where:
+- C = ciphertext letter
+- P = plaintext letter
+- k = shift key
+- n = number of rails
 ```
 
-##### Transposition Layer
+## Usage
 
 ```python
-# 8-column permutation
-for col in self.trans_key:
-    for row in range(rows):
-        result.append(matrix[row][col])
+# Basic usage example
+plaintext = "Hello World!"
+shift_key = 3
+rail_key = 3
+
+# Encryption
+encrypted = hybrid_encrypt(plaintext, shift_key, rail_key)
+
+# Decryption
+decrypted = hybrid_decrypt(encrypted, shift_key, rail_key)
 ```
 
-### Security Advantages
+## Sample Input/Output
 
-#### 1. Multiple Security Layers
+```
+Enter the plain text: Hello World!
+Enter the shift key: 3
+Enter the rail key: 3
 
-- **Diffusion**: Hill Cipher matrix multiplication
-- **Confusion**: Columnar transposition permutation
-- **Avalanche Effect**: Small changes propagate through both layers
+Encrypted: Kryze Zruog!
+Decrypted: Hello World!
+```
 
-#### 2. Protection Against Common Attacks
+## Functions
 
-| Attack Type          | Protection Mechanism              |
-| -------------------- | --------------------------------- |
-| Frequency Analysis   | Block operations mask patterns    |
-| Known-plaintext      | Two-layer transformation          |
-| Statistical Analysis | Combined substitution-permutation |
+### Encryption Functions
 
-#### 3. Mathematical Strength
+- `caesar_cipher(text, shift)`: Performs Caesar cipher encryption
+- `rail_fence_encrypt(text, key)`: Performs Rail Fence encryption
+- `hybrid_encrypt(text, shift, rail_key)`: Combines both ciphers for encryption
 
-- Non-linear relationship between input and output
-- Complex key schedule using SHA-256
-- Large key space resistant to brute force
+### Decryption Functions
 
-### Implementation Security Features
+- `caesar_decipher(text, shift)`: Reverses Caesar cipher
+- `rail_fence_decrypt(cipher, key)`: Reverses Rail Fence cipher
+- `hybrid_decrypt(cipher, shift, rail_key)`: Complete hybrid decryption
 
-- Secure random number generation
-- Standard block cipher padding scheme
-- Key stretching through cryptographic hashing
-- Proper block cipher mode of operation
+## Security Considerations
 
-### Performance vs Security Trade-offs
+1. **Strengths**
 
-| Feature             | Security Impact | Performance Impact |
-| ------------------- | --------------- | ------------------ |
-| 4x4 Matrix          | High            | Moderate           |
-| 8-col Transposition | Medium          | Low                |
-| SHA-256 KDF         | High            | One-time           |
+   - Multiple encryption layers
+   - Combination of substitution and transposition
+   - Configurable parameters
 
-### Security Limitations
+2. **Limitations**
+   - Based on classical ciphers
+   - Not cryptographically secure
+   - Vulnerable to modern cryptanalysis
 
-- Not suitable for cryptographic applications requiring formal security proofs
-- Should not be used for sensitive data in production environments
-- Designed for educational purposes and understanding classical cipher combinations
+## Requirements
+
+- Python 3.x
+- No external dependencies
+
+## Installation
+
+1. Clone the repository
+2. Navigate to the directory
+3. Run the script:
+
+```bash
+python hybridCipher.py
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
