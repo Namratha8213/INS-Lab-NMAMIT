@@ -46,3 +46,7 @@ This cipher is not secure for modern use because:
 - There are only 25 possible keys to try.
 - Letter frequency analysis can easily break it.
 - Patterns in the original text remain visible in the encrypted text.
+
+## Screenshot of implementation and Output
+
+![Ceasure Cipher](D:\6th sem\INS\Lab\INS-Lab-NMAMIT\Ceasure Cipher\images\output.png)
