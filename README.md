@@ -8,8 +8,6 @@ This repository contains implementations of various cryptographic techniques and
 
 ### 1. Implementation of Substitution and Transposition Techniques
 
-Students will implement and analyze the following classical encryption techniques:
-
 #### Substitution Techniques:
 
 - 🔐 **Caesar Cipher**
@@ -23,8 +21,6 @@ Students will implement and analyze the following classical encryption technique
 - 🔐 **Rail Fence Cipher**
 
 ### 2. Implementation of Cryptographic Algorithms
-
-Explore and implement the following modern cryptographic algorithms:
 
 - 🔑 **Feistel Structure**
 - 🔑 **Data Encryption Standard (DES) (Key Generation Only)**
