@@ -75,3 +75,7 @@ Decrypted text: HELLO
 
 - Python 3.x
 - Numpy library
+
+## Screenshot of implementation and Output
+
+![Hill Cipher](./images/output.png)

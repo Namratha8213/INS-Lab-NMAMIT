@@ -115,12 +115,6 @@ python fiestalCipher.py
 - Fixed block size
 - Not cryptographically secure
 
-## Contributing
+## Screenshot of implementation and Output
 
-1. Fork the repository
-2. Create a feature branch
-3. Submit pull request
-
-## License
-
-MIT License
+![Fiestal Cipher](./images/output.png)

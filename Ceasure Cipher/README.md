@@ -49,4 +49,4 @@ This cipher is not secure for modern use because:
 
 ## Screenshot of implementation and Output
 
-![Ceasure Cipher](D:\6th sem\INS\Lab\INS-Lab-NMAMIT\Ceasure Cipher\images\output.png)
+![Ceasure Cipher](./images/output.png)

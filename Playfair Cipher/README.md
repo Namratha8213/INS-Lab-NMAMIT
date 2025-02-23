@@ -58,3 +58,7 @@ Decrypted text: HELLO WORLD
 - More secure than simple substitution ciphers
 - Resistant to frequency analysis of single letters
 - Historical cipher, not suitable for modern cryptographic needs
+
+## Screenshot of implementation and Output
+
+![Playfair Cipher](./images/output.png)

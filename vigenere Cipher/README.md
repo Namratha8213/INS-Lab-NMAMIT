@@ -106,10 +106,6 @@ python vignereCipher.py
 2. Create a feature branch
 3. Submit pull request
 
-## License
+## Screenshot of implementation and Output
 
-MIT License
-
-## Note
-
-This implementation is for educational purposes only. For real security needs, use modern cryptographic algorithms.
+![Vigenere Cipher](./images/output.png)
