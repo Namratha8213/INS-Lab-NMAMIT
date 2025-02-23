@@ -40,3 +40,5 @@ Explore and implement the following modern cryptographic algorithms:
 git clone https://github.com/Namratha8213/INS-Lab-NMAMIT.git
 cd INS-Lab-NMAMIT
 ```
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17f9XxEXmryXks1R6vTw3Uwkk12dQ6utU#scrollTo=WhP4EVnuN7Hb)
