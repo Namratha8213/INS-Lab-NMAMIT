@@ -129,10 +129,6 @@ python des.py
 2. Create a feature branch
 3. Submit pull request
 
-## License
-
-MIT License
-
 ## References
 
 - FIPS 46-3: Data Encryption Standard (DES)
