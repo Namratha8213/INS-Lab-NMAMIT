@@ -139,5 +139,3 @@ MIT License
 - Cryptography and Network Security - William Stallings
 
 ## Screenshot of implementation and Output
-
-![DES](./images/output.png)
