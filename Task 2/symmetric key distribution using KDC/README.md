@@ -149,3 +149,7 @@ This implementation is for educational purposes. For production use:
 - Implement authentication
 - Use secure communication channels
 - Add key rotation mechanism
+
+## Screenshot of implementation and Output
+
+![symmetric key distribution using KDC](./images/image.png)
