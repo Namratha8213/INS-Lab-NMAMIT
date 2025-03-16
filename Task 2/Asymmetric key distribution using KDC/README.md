@@ -125,3 +125,8 @@ This implementation is for educational purposes. For production use:
 - Add error handling
 - Use key encryption
 - Follow security best practices
+
+## Screenshot of implementation and Output
+
+![Asymmetric key distribution using KDC](./images/image1.png)
+![Asymmetric key distribution using KDC](./images/image2.png)
